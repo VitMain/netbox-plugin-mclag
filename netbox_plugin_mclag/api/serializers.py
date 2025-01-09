@@ -1,7 +1,7 @@
 from rest_framework import serializers
 
 from netbox.api.serializers import NetBoxModelSerializer, WritableNestedSerializer
-from dcim.api.nested_serializers import NestedDeviceSerializer, NestedInterfaceSerializer
+from dcim.api.serializers_.nested import NestedDeviceSerializer, NestedInterfaceSerializer
 from ..models import McLag, McDomain
 from dcim.models import Interface
 from ..util import get_interface_label
